@@ -23,6 +23,19 @@ Node.js with the examples below. Use the command:
 `node problems/02-constructor-function-prototype-method.js`
 
 Examples:
+***********************************************************************/
+
+function Email (recipient, sender, subject, text){
+  this.recipient = recipient;
+  this.sender = sender;
+  this.subject = subject;
+  this.text = text;
+}
+
+Email.prototype.getSubjectAndText = function(){
+  return `${this.subject}: ${this.text}`;
+}
+
 
 const message1 = new Email('sally@smith.com', 'john@smith.com', 
   'Test Message One', 'This is a test message.');
@@ -54,7 +67,6 @@ console.log(message2.getSubjectAndText());
 // }
 // Test Message Two: This is a test message.
 
-***********************************************************************/
 
 
 

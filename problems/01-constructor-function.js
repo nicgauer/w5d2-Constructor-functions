@@ -16,6 +16,13 @@ Node.js with the examples below. Use the command:
 `node problems/01-constructor-function.js`
 
 Examples:
+***********************************************************************/
+
+function SMS(recipient, sender, text){
+  this.recipient = recipient;
+  this.sender = sender;
+  this.text = text;
+}
 
 const message1 = new SMS('555-111-1111', '555-222-2222', 'Test message one');
 console.log(message1);
@@ -39,7 +46,6 @@ console.log(message2);
 //   text: 'Test message two'
 // }
 
-***********************************************************************/
 
 
 
